@@ -60,7 +60,7 @@ seconddataset    		: Output of question 5
 * load data files in dataframes
 * Merge Test and Train data by rbind of activities,features and subjects
 * Merge activities,features and subjects in one dataframe by cbind  ==> Answer to Question 1 = onedataset
-* create mesurement_names variable containing all columns to keep (mean, std, subjectid, activity id) So 33+33+3 = 68 columns
+* create mesurement_names variable containing all columns to keep (mean, std, subjectid, activity id) So 33+33+3 = 68 columns  (FreqMean are not selected, if selected it should be 81)
 * select the 68 columns from  onedataset ==> Answer to question 2 = onedataset
 * remove  characters '(' & ')' & '-' & ','  and lower column names ==> Answer to question 3
 * Merge onedataset with activity_labels and keep only activity labels

@@ -108,7 +108,7 @@ onedataset <- setcolorder(onedataset, c(colnames(onedataset)[1],colnames(onedata
 
 
 #create a second dataset)
-seconddataset <-  onedataset[,2:68] %>%  group_by( activity)%>% summarise_each(funs(mean))
+seconddataset <-  onedataset %>%  group_by( subjectid,activity)%>% summarise_each(funs(mean))
 # seconddataset is answer to question 5
 write.table(seconddataset,file="tidydata.txt",row.name=FALSE) 
 
